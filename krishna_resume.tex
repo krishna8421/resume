@@ -1,0 +1,187 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Adjust margins
+\usepackage[left=0.5in,top=0.3in,right=0.5in,bottom=0.3in]{geometry}
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-12pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Krishna Kumar} \\ \vspace{16pt}
+    \href{https://github.com/krishna8421}{\raisebox{-0.2\height}\faGithub\ {github.com/krishna8421}} ~
+    \href{https://linkedin.com/in/krishnaaa8421}{\raisebox{-0.2\height}\faLinkedin\ {linkedin.com/in/krishnaaa8421}} ~
+    \href{https://krishnaaa.com}{\raisebox{-0.2\height}\faLaptopCode\ {krishnaaa.com}} ~
+    \small \raisebox{-0.1\height}\faPhone\ \href{tel:+91860-380-8548}{+91 8603808548} ~ 
+    \href{mailto:dev@krishnaaa.com}{\raisebox{-0.2\height}\faEnvelope\ {dev@krishnaaa.com}} 
+\end{center}
+
+%-----------SUMMARY-----------
+% \section{Summary}
+% Tech-savvy and results-driven Computer Science student with a passion for full-stack development and cloud technologies. Proficient in JavaScript, TypeScript, and modern development frameworks. Eager to contribute technical skills and innovation to a dynamic software engineering role at a leading tech company.
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{DRDO R\&DE (Engrs)}{Nov '23 -- Mar '24}
+{Research Intern}{Pune/Remote}
+\resumeItemListStart
+\resumeItem{Developed secure peer-to-peer communication protocol using Kyber, a post-quantum cryptography algorithm.}
+\resumeItem{Implemented AES-256 encryption for data confidentiality.}
+\resumeItem{Contributed to data integrity verification through Dilithium2 signatures.}
+\resumeItemListEnd
+
+\resumeSubheading
+{ENITIATE}{Jun '23 -- Nov '23}
+{Founder's Office Tech Intern}{Remote}
+\resumeItemListStart
+\resumeItem{Managed team of 5 people, coordinated tasks, and ensured project progress.}
+\resumeItem{Optimized GCP development pipeline with GitHub webhooks.}
+\resumeItem{Integrated AWS services for secure backend access and implemented CloudFront for efficient data caching.}
+\resumeItemListEnd
+
+\resumeSubheading
+{SKILLERATE}{Mar '23 -- Apr '23}
+{Back-End Developer Intern}{Remote}
+\resumeItemListStart
+\resumeItem{Developed a critical module for a live Learning Management System (LMS), optimizing user workflow.}
+\resumeItem{Collaborated with the Frontend Team to enhance the LMS user interface, improving user experience}
+\resumeItem{Led efforts to refine and improve the admin panel, enhancing system manageability.}
+\resumeItemListEnd
+
+\resumeSubheading
+{MAUKA EDUCATION}{Jul '22 -- Aug '22}
+{Back-End Developer Intern}{Remote}
+\resumeItemListStart
+\resumeItem{Designed secure Login/Register Form and improved Spider chart for progress visualization.}
+\resumeItem{Enhanced UI responsiveness and upgraded APIs.}
+\resumeItemListEnd
+
+\resumeSubheading
+{MICROSOFT LEARN STUDENT AMBASSADOR, KIIT CHAPTER}{Jan '22 -- Present}
+{Full Stack Developer}{}
+\resumeItemListStart
+\resumeItem{Organized tech events, hosted workshops, and developed Stocks Dashboard Site.}
+\resumeItem{Collaborated with ambassadors to promote 'Tech for All' through events and resources.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Title Generation From Human to Human Conversation} $|$ \emph{PyTorch} $|$ \href{https://github.com/krishna8421/title-generation}{\raisebox{-0.2\height}\faGithub\ }}{Jan '24}
+\resumeItemListStart
+\resumeItem{Developed a backend for event ticketing, integrating Firebase authentication and Razorpay payments.}
+\resumeItem{Implemented Google sign-up, coupon codes, and multiple payment methods.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Kryptic Hunt} $|$ \emph{Next.js, Tailwind, Next Auth} $|$ \href{https://github.com/krishna8421/kryptic-hunt}{\raisebox{-0.2\height}\faGithub\ } \href{https://kryptic-hunt.mlsakiit.com}{\raisebox{-0.2\height}\faLink\ }}{Dec '23}
+\resumeItemListStart
+\resumeItem{Built a Kryptic hunt game using Next.js, enabling level progression and leaderboard competition.}
+\resumeItem{Enhanced user engagement with dynamic level advancement and real-time leaderboard updates.}
+
+\resumeItemListEnd 
+
+\resumeProjectHeading
+{\textbf{KTF Backend} $|$ \emph{Express.js, Firebase, TypeScript} $|$ \href{https://github.com/krishna8421/ktf-backend}{\raisebox{-0.2\height}\faGithub\ }}{May '22}
+\resumeItemListStart
+\resumeItem{Developed a backend for event ticketing, integrating Firebase authentication and Razorpay payments.}
+\resumeItem{Implemented Google sign-up, coupon codes, and multiple payment methods.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Public APIs Site} $|$ \emph{Next.js, React.js, Chakra-UI} $|$ \href{https://github.com/krishna8421/public-apis-site}{\raisebox{-0.2\height}\faGithub\ } \href{https://publicapis.krishnaaa.com}{\raisebox{-0.2\height}\faLink\ }}{Jul '21}
+\resumeItemListStart
+\resumeItem{Developed website for discovering public APIs with a user-friendly interface.}
+\resumeItem{Implemented search function by category or keyword.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: JavaScript, TypeScript, Golang, Java} \\
+    \textbf{Tools}{: VS Code, AWS, GCP, Figma, Git, Redis} \\
+    \textbf{Frameworks}{: React, Next.js, Express.js} \\
+    }}
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY}{2021 -- 2025}
+{B. Tech in Computer Science and Engineering, CGPA 7.45/10}{Bhubaneswar, Odisha}
+\resumeSubHeadingListEnd
+
+\end{document}
